@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API </title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div id="firstwindow" class="firstwindow">
+            <h1 class="nameofapp">Weather Api</h1>
+            <button id="fetchdata" class="btn">Fetch Data</button>
+        </div>
+        <div id="secondwindow" class="secondwindow d-none">
+            <h1 >Welcome To The Weather App </h1>
+            <p>Herer is your current location</p>
+            <div class="coordinates">
+                <div id="lat" class="corbuttons">Lat:</div>
+                <div id="long" class="corbuttons">Long:</div>
+            </div>
+            <iframe class="maps" id="maps"  frameborder="0" style="border:0"></iframe>
+            
+        </div>
+        
+        <div id="details" class="details d-none">
+            <div class="detialshead">
+                <h1>Your Weather Data </h1><br>
+            </div>
+          <div class="yourdata">
+              <div id="location" class="buttons">Location:</div>
+              <div id="windspeed" class="buttons">Wind Speend:</div>
+              <div id="humidity" class="buttons">Humidity:</div>
+              <div id="timezone" class="buttons">Time Zone:</div>
+              <div id="pressure" class="buttons">Pressure:</div>
+              <div id="winddirection" class="buttons">Wind Direction:</div>
+              <div id="uv" class="buttons">UV Index:</div>
+              <div id="feelslike" class="buttons">Feels Like:</div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
